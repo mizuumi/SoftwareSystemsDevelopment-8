@@ -9,11 +9,6 @@ jobs:
   docker:
     runs-on: ubuntu-latest
 
-  db:
-    platform: linux/x86_64 // この行を追加。
-    image: mysql:5.7
-    container_name: app_db
-
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
